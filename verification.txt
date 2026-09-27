@@ -1,0 +1,1 @@
+C program verified by compilation and execution. Search comparison counts match output.txt.

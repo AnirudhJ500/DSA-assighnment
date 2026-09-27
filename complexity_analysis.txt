@@ -1,0 +1,75 @@
+COMPLEXITY ANALYSIS
+===================
+
+1. Binary Search Tree (BST) Search
+----------------------------------
+Best Case:
+O(1) - The required key is at the root.
+
+Average Case:
+O(log n) - When the BST is reasonably balanced.
+
+Worst Case:
+O(n) - When the BST becomes skewed.
+
+Space Complexity:
+O(n) - n nodes are stored in the BST.
+The iterative search itself uses O(1) extra space, apart from the tree.
+
+2. Linear Search
+-----------------
+Best Case:
+O(1) - The key is found at the first array position.
+
+Average Case:
+O(n)
+
+Worst Case:
+O(n) - The key is at the last position or is not present.
+
+Space Complexity:
+O(1) additional space because the array already exists.
+
+3. BST Shape and Height
+-----------------------
+The given insertion order creates the following BST:
+
+             45
+           /    \
+         20      60
+        /  \    /  \
+      10   30  50   70
+          /      \
+         25       55
+
+Height = 3 edges = 4 levels.
+
+The tree is not completely balanced, but it is also not completely skewed.
+The search path length depends on the height of the tree.
+
+4. Observed Results
+-------------------
+Search key 25:
+BST = 4 comparisons
+Linear = 8 comparisons
+
+Search key 55:
+BST = 4 comparisons
+Linear = 9 comparisons
+
+Search key 90:
+BST = 3 comparisons
+Linear = 9 comparisons
+
+For this dataset, BST search required fewer comparisons for all three tested
+search keys.
+
+5. Theoretical Comparison
+--------------------------
+BST Search:
+Best    Average    Worst
+O(1)    O(log n)   O(n)
+
+Linear Search:
+Best    Average    Worst
+O(1)    O(n)       O(n)

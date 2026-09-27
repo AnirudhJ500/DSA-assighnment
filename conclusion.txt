@@ -1,0 +1,29 @@
+FINAL CONCLUSION
+================
+
+For the given ISBN dataset, a Binary Search Tree was constructed by inserting
+the keys in the specified order.
+
+The traversals obtained were:
+
+Inorder:
+10 20 25 30 45 50 55 60 70
+
+Preorder:
+45 20 10 30 25 60 50 55 70
+
+Postorder:
+10 25 30 20 55 50 70 60 45
+
+The BST search required 4 comparisons for 25, 4 comparisons for 55, and
+3 comparisons for 90. Linear search required 8, 9, and 9 comparisons
+respectively.
+
+Therefore, for this particular dataset, the measured number of comparisons
+was lower for BST search than for linear search. However, BST performance
+depends strongly on the shape and height of the tree. A balanced BST can
+provide O(log n) average search time, while a skewed BST can degrade to
+O(n).
+
+Hence, the choice between BST Search and Linear Search depends on the data
+structure, insertion order, tree shape, and expected number of searches.

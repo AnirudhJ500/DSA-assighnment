@@ -1,0 +1,17 @@
+BST SEARCH vs LINEAR SEARCH
+============================
+
+Criteria                  BST Search                    Linear Search
+---------------------------------------------------------------------------
+Data structure             Binary Search Tree            Array/List
+Search principle           Compare and move left/right  Check elements one by one
+Best-case time             O(1)                          O(1)
+Average-case time          O(log n)*                     O(n)
+Worst-case time            O(n)                          O(n)
+Space for structure        O(n)                          O(1) extra
+Given key 25               4 comparisons                8 comparisons
+Given key 55               4 comparisons                9 comparisons
+Given key 90               3 comparisons                9 comparisons
+Effect of shape             Height affects performance   Position affects performance
+
+* O(log n) average assumes a reasonably balanced BST.
